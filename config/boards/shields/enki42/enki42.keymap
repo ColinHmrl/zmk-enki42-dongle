@@ -40,10 +40,10 @@
             //                             | ENTER | 1 | SPACE |   | BACKSPACE | 2 | DEL |
 
             bindings = <
-&kp ESCAPE      &kp FR_A  &kp FR_Z  &kp FR_E         &kp FR_R  &kp FR_T      &kp FR_Y         &kp FR_U      &kp FR_I          &kp FR_O      &kp FR_P            &kp DELETE
-&kp LEFT_SHIFT  &hm LCTRL FR_Q  &hm LGUI FR_S  &hm LALT FR_D         &hm LSHIFT FR_F  &kp FR_G      &kp FR_H         &kp FR_J      &kp FR_K          &kp L      &kp FR_M            &kp ENTER
-&kp RCTRL       &kp FR_W  &kp FR_X  &kp FR_C         &kp FR_V  &kp FR_B      &kp FR_N         &kp FR_COMM  &kp FR_SCLN  &kp FR_COLN  &kp FR_EXLM  &kp RIGHT_SHIFT
-                                &kp ENTER  &mo 1  &kp SPACE  &kp BACKSPACE  &mo 2      &kp DEL
+&kp ESCAPE &kp FR_A &kp FR_Z &kp FR_E &kp FR_R &kp FR_T &kp FR_Y &kp FR_U &kp FR_I &kp FR_O &kp FR_P &kp BACKSPACE
+&kp TAB  &hm LCTRL FR_Q  &hm LGUI FR_S  &hm LALT FR_D         &hm LSHIFT FR_F &kp FR_G &kp FR_H &kp FR_J &kp FR_K &kp L &kp FR_M &kp ENTER
+&kp FR_LABK &kp FR_W &kp FR_X &kp FR_C &kp FR_V &kp FR_B &kp FR_N &kp FR_COMM &kp FR_SCLN &kp FR_COLN &kp FR_EXLM &kp RIGHT_SHIFT
+                                            &kp   &mo 1 &kp SPACE &kp ENTER  &mo 2 &kp DEL
             >;
         };
 
@@ -55,10 +55,10 @@
             //                      | ADJ | ___ | ___ |    | ___ | ___ | ADJ |
 
             bindings = <
-&mt LWIN CAPS    &kp FR_AMPR  &kp N7  &kp N8       &kp N9  &kp PLUS   &kp EXCL       &kp AT    &kp HASH     &kp DLLR  &kp PRCNT  &mt RWIN F1
-&mt LCTRL K_APP  &kp KP_SLASH     &kp N4  &kp N5       &kp N6  &kp MINUS  &kp CARET      &kp AMPS  &kp STAR     &kp LPAR  &kp RPAR   &mt RALT F2
-&mt LALT EQUAL   &kp N0           &kp N1  &kp N2       &kp N3  &trans    &kp LG(SPACE)  &kp F4    &kp F5       &kp F6    &kp F7     &mt RALT F3
-                                          &trans  &trans  &trans     &trans         &trans    &trans
+&kp FR_SUP2 &kp FR_AMPR &kp FR_EACU &kp FR_DQUO &kp FR_QUOT &kp FR_LPRN &kp FR_MINS &kp FR_EGRV &kp FR_UNDS &kp FR_CCED &kp FR_AGRV &kp FR_RPRN 
+&trans &trans &trans &trans &trans &trans           &trans &trans  &trans  &trans &trans  &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                                          &trans &trans &trans &trans &trans &trans
             >;
         };
 
@@ -70,10 +70,10 @@
             //                          | ___ | ___  | ADJ  |            | ADJ  | ___  | ___ |
 
             bindings = <
-&kp LWIN   &kp C_VOL_UP  &kp PG_UP  &kp C_PP       &kp HOME  &kp C_PAUSE  &kp N0       &kp HOME  &kp C_PP  &kp PG_UP  &kp C_VOL_UP  &kp RWIN
-&kp LCTRL  &kp C_VOL_DN  &kp LEFT   &kp UP         &kp DOWN  &kp RIGHT    &kp LEFT     &kp DOWN  &kp UP    &kp RIGHT  &kp C_VOL_DN  &kp RALT
-&kp LALT   &kp C_MUTE    &kp PG_DN  &kp LG(LS(S))  &kp END   &kp C_PLAY   &kp N0       &kp END   &trans   &kp PG_DN  &kp C_MUTE    &kp RALT
-                                    &trans         &trans    &trans  &trans  &trans    &trans
+&kp LWIN &kp C_VOL_UP &kp PG_UP &kp C_PP &kp HOME &kp C_PAUSE &kp N0 &kp HOME &kp C_PP &kp PG_UP &kp C_VOL_UP &kp RWIN
+&kp LCTRL &kp C_VOL_DN &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp C_VOL_DN &kp RALT
+&kp LALT &kp C_MUTE &kp PG_DN &kp LG(LS(S)) &kp END &kp C_PLAY &kp N0 &kp END   &trans &kp PG_DN &kp C_MUTE &kp RALT
+                                    &trans &trans &trans &trans &trans &trans
             >;
         };
 
@@ -87,8 +87,8 @@
             bindings = <
 &bootloader        &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
 &bt BT_CLR         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&ext_power EP_OFF  &kp KP_NUM    &none         &none         &none         &none         &none         &none         &none         &none         &none         &ext_power EP_OFF
-                                               &trans        &none         &trans        &trans        &none         &trans
+&ext_power EP_OFF &kp KP_NUM    &none         &none         &none         &none         &none         &none         &none         &none         &none         &ext_power EP_OFF
+                                               &trans &none         &trans &trans &none         &trans
             >;
         };
     };
